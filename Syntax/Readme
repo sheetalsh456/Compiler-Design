@@ -1,0 +1,9 @@
+Syntax Analysis Phase
+
+Output : Errors and line numbers.
+
+Steps to Compile & Run
+1. lex parser.l
+2. yacc parser.y
+3. gcc y.tab.c -ll -yy
+4 ./a.out test.c

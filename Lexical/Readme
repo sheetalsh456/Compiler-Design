@@ -1,0 +1,8 @@
+Lexical Analysis
+
+Output : stream of tokens, symbol table
+
+Steps to compile & run :
+1. lex iflex.l
+2. gcc lex.yy.c
+3. ./a.out <test.c

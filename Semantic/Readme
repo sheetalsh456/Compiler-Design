@@ -1,0 +1,7 @@
+Output : Semantic checking
+
+Steps to run :
+1. lex s_parser.l
+2. yacc s_parser.y
+3. gcc y.tab.c -ll -ly
+4. ./a.out test1.c
