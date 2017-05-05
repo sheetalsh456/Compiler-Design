@@ -1,5 +1,14 @@
 Intermediate Code Generator
 
+Intermediate code is generated for the following constructs :
+1. Arithmetic expressions
+2. Nested if-else statements
+3. Nested while loop
+4. Nested for loop
+5. Nested do-while loop
+6. Nested compound statements
+7. Arrays
+
 Steps to run :
 1. lex s_parser.l
 2. yacc s_parser.y
