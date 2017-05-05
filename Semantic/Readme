@@ -1,7 +1,13 @@
-Output : Semantic checking
+Output : Semantic checking and symbol table
+
+The checking includes displaying the following errors :
+1. Undeclared variable
+2. Redeclaration of variable
+3. Variable out of scope
+4. Type mismatch
 
 Steps to run :
 1. lex s_parser.l
 2. yacc s_parser.y
-3. gcc y.tab.c -ll -ly
+3. gcc y.tab.c -ll -ly -w
 4. ./a.out test1.c

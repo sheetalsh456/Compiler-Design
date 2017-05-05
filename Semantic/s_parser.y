@@ -72,7 +72,7 @@ stmt : Declaration
 						storereturn(ct,FLOAT); 
 					else 
 						storereturn(ct,INT); ct++;
-					} 
+				} 
 	| RETURN ';' {storereturn(ct,VOID); ct++;}
 	| ';'
 	| PRINT '(' STRING ')' ';' 
