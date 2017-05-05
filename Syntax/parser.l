@@ -17,9 +17,9 @@ int yylineno;
 "/*"					{ multicomment(); }
 "//"					{ singlecomment(); }
 "#include<"({alpha})*".h>" {}
-"#define"({space})""({alpha})""({alpha}|{digit})*""({space})""({digit})+"" { return DEF;}
-"#define"({space})""({alpha}({alpha}|{digit})*)""({space})""(({digit}+)\.({digit}+))"" { return DEF;}
-"#define"({space})""({alpha}({alpha}|{digit})*)""({space})""({alpha}({alpha}|{digit})*)"" { return DEF;}
+"#define"({space})""({alpha})""({alpha}|{digit})*""({space})""({digit})+"" 			{ return DEF;}
+"#define"({space})""({alpha}({alpha}|{digit})*)""({space})""(({digit}+)\.({digit}+))"" 		{ return DEF;}
+"#define"({space})""({alpha}({alpha}|{digit})*)""({space})""({alpha}({alpha}|{digit})*)"" 	{ return DEF;}
 {digit}+    				{  return CONSTANT; }
 ({digit}+)\.({digit}+) 			{  return CONSTANT; }
 0[xX]{hex}+{ul}?			{  return CONSTANT; }
@@ -29,8 +29,8 @@ int yylineno;
 {digit}+{exp}{fl}?			{  return CONSTANT; }
 {digit}*"."{digit}+({exp})?{fl}?	{  return CONSTANT; }
 {digit}+"."{digit}*({exp})?{fl}?	{  return CONSTANT; }
-{alpha}?\"(\\.|[^\\"])*\"	{  return STRING_LITERAL; } 
-"sizeof"			{  return SIZEOF; }
+{alpha}?\"(\\.|[^\\"])*\"		{  return STRING_LITERAL; } 
+"sizeof"				{  return SIZEOF; }
 "->"			{  return PTR_OP; }
 "++"			{  return INC_OP; }
 "--"			{  return DEC_OP; }
