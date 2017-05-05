@@ -105,7 +105,7 @@ scanf 	return SCANF;
 "||"    return OR;
 "&&"    return AND;
 while	return WHILE;
-";"	return SEMICOLON;
+";"		return SEMICOLON;
 ":" 	return COLON;
 "."	return FULLSTOP;
 int	return INT;

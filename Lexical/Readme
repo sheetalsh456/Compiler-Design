@@ -2,6 +2,14 @@ Lexical Analysis
 
 Output : stream of tokens, symbol table
 
+The list of tokens that have been identified are :
+1. Identifiers
+2. Keywords
+3. Constants
+4. Operators
+5. Punctuators / Separators
+6. Special Characters
+
 Steps to compile & run :
 1. lex iflex.l
 2. gcc lex.yy.c
