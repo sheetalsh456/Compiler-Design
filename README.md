@@ -7,3 +7,5 @@ There are 4 phases :
 4. Intermediate Code generator
 
 The codes and execution instructions for all the phases have been added.
+
+Technologies used : lex, yacc, C
